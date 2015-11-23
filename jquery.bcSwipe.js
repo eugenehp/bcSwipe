@@ -37,9 +37,11 @@
             cancelTouch();
             if (difference > 0) {
               $(this).carousel('next');
+              $(config.element).carousel('next');
             }
             else {
               $(this).carousel('prev');
+              $(config.element).carousel('prev');
             }
           }
         }
